@@ -30,7 +30,7 @@ export class MusicModeUI
             </div>
             <div class='player_info_details_wrapper'>
                 <p style='font-size: small'><i translate-path='locale.musicPlayerMode.currentlyPlaying'></i></p>
-                <h2  id='player_info_title' translate-path='locale.musicPlayerMode.nothingPlaying'></h2>
+                <p  id='player_info_title' translate-path='locale.musicPlayerMode.nothingPlaying'></p>
                 
                 <div class='player_info_detail_element'>
                     <i id='player_info_detail' translate-path='locale.musicPlayerMode.nothingPlayingCopyright'></i>

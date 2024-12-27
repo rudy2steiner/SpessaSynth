@@ -29,14 +29,8 @@
         content='SpessaSynth is a powerful MIDI Player and SoundFont2 / DLS Synthesizer with MIDI editing capabilites. It allows to play MIDI files with .sf2 files and .dls files and convert dls to sf2 online!'
         name='description' />
     <meta content='spessasus' name='author' />
-    <meta
-        content='midi, soundfont, sf2, synth, synthesizer, soundfont2, midi player, midi player online, player, sf3, dls, rmidi, mid, rmi, soundfont player, midi soundfont player online, dls to sf2, dls to sf2 converter'
-        name='keywords' />
-
-    <title>SpessaSynth SoundFont/DLS MIDI Player Online</title>
     <link as='style' href='src/website/minified/style.min.css' rel='preload'>
     <link href='src/website/minified/demo_main.min.js' rel='modulepreload'>
-
     <link href='src/website/minified/style.min.css' rel='stylesheet'>
     <link href='src/website/favicon.ico' rel='icon' type='image/png'>
     <link href='src/website/manifest.json' rel='manifest'>
@@ -80,12 +74,12 @@
             </svg>
         </noscript>
     </div>
-    <noscript><h1>Spessasynth requires JavaScript to work. Please turn it on.</h1></noscript>
-    <h1 id='loading_message'>Loading...</h1>
+    <noscript><p>Spessasynth requires JavaScript to work. Please turn it on.</p></noscript>
+    <p id='loading_message'>Loading...</p>
 </div>
 
 <div class='drop_prompt hidden'>
-    <h1 translate-path='locale.dropPrompt'>Drop files here...</h1>
+    <p translate-path='locale.dropPrompt'>Drop files here...</p>
 </div>
 
 <div class='spessasynth_main'>
@@ -94,8 +88,8 @@
 
         <div id='title_wrapper'>
             <div id='progress_bar'></div>
-            <h1 id='title' translate-path='locale.demoTitleMessage'>SpessaSynth: Online Demo</h1>
-            <noscript><h1>SpessaSynth requires JavaScript to work.</h1></noscript>
+            <p id='title' translate-path='locale.demoTitleMessage'>SpessaSynth: Online Demo</p>
+            <noscript><p>SpessaSynth requires JavaScript to work.</p></noscript>
 
             <div class='midi_and_sf_controller'>
                 <label for='midi_file_input' id='file_upload' translate-path='locale.midiUploadButton'>Upload your MIDI

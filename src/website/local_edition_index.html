@@ -28,11 +28,6 @@
     <meta content='SpessaSynth SoundFont MIDI player online demo - play MIDI files with SF2 or SF2 files'
           name='description' />
     <meta content='spessasus' name='author' />
-    <meta
-        content='midi, soundfont, sf2, synth, synthesizer, soundfont2, midi player, midi player online, player, sf3, soundfont player, soundfont player online'
-        name='keywords' />
-
-
     <title>SpessaSynth Local Edition</title>
     <link as='style' href='website/minified/style.min.css' rel='preload'>
     <link href='website/minified/local_main.min.js' rel='modulepreload'>
@@ -41,7 +36,7 @@
 </head>
 <body>
 <div class='drop_prompt hidden'>
-    <h1 translate-path='locale.dropPrompt'>Drop files here...</h1>
+    <p translate-path='locale.dropPrompt'>Drop files here...</p>
 </div>
 
 <div class='spessasynth_main'>
@@ -50,8 +45,8 @@
 
         <div id='title_wrapper'>
             <div id='progress_bar'></div>
-            <h1 id='title' translate-path='locale.titleMessage'>SpessaSynth: SoundFont2 Javascript Synthetizer</h1>
-            <noscript><h1>SpessaSynth requires JavaScript to work.</h1></noscript>
+            <p id='title' translate-path='locale.titleMessage'>SpessaSynth: SoundFont2 Javascript Synthetizer</p>
+            <noscript><p>SpessaSynth requires JavaScript to work.</p></noscript>
             <div class='midi_and_sf_controller'>
                 <label for='midi_file_input' id='file_upload' translate-path='locale.midiUploadButton'>Upload your MIDI
                     files</label>

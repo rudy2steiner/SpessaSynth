@@ -6,10 +6,10 @@ import { USE_MIDI_RANGE } from "./handlers/keyboard_handler.js";
 
 // translate-path: only innerText: translate-path-title: inner text by adding .title and title by adding .description
 export const settingsHtml = `
-<h1 translate-path='locale.settings.mainTitle'></h1>
+<p translate-path='locale.settings.mainTitle'></p>
 <div class='settings_groups_parent'>
     <div class='settings_group'>
-        <h2 translate-path='locale.settings.rendererSettings.title'></h2>
+        <p translate-path='locale.settings.rendererSettings.title'></p>
         <label translate-path-title='locale.settings.rendererSettings.noteFallingTime'></label>
         <spessarange min='1' max='9999' value='1000' class='settings_slider' input_id='note_time_slider' units='ms'></spessarange>
         
@@ -66,7 +66,7 @@ export const settingsHtml = `
 
 
     <div class='settings_group'>
-        <h2 translate-path='locale.settings.keyboardSettings.title'></h2>
+        <p translate-path='locale.settings.keyboardSettings.title'></p>
         <label for='channel_selector' translate-path-title='locale.settings.keyboardSettings.selectedChannel'></label>
         <select id='channel_selector'>
         </select>
@@ -98,7 +98,7 @@ export const settingsHtml = `
     
     
     <div class='settings_group' id='midi_settings'>
-        <h2 translate-path='locale.settings.midiSettings.title'></h2>
+        <p translate-path='locale.settings.midiSettings.title'></p>
         <label for='midi_input_selector' translate-path-title='locale.settings.midiSettings.midiInput'></label>
         <select id='midi_input_selector'>
             <option value='-1' translate-path='locale.settings.midiSettings.midiInput.disabled'></option>
@@ -112,7 +112,7 @@ export const settingsHtml = `
     
     
     <div class='settings_group'>
-        <h2 translate-path='locale.settings.interfaceSettings.title'></h2>
+        <p translate-path='locale.settings.interfaceSettings.title'></p>
         <div class='switch_label'>
             <label translate-path-title='locale.settings.interfaceSettings.toggleTheme'></label>
             <label class='switch'>
@@ -135,9 +135,9 @@ export const settingsHtml = `
             <option value='right' translate-path='locale.settings.interfaceSettings.layoutDirection.values.rightToLeft'></option>
         </select>
         
-        <h3><a href='https://github.com/spessasus/SpessaSynth/wiki/How-To-Use-App' target='_blank' translate-path-title='locale.synthesizerController.helpButton'></a></h3>
+        <p><a href='https://github.com/spessasus/SpessaSynth/wiki/How-To-Use-App' target='_blank' translate-path-title='locale.synthesizerController.helpButton'></a></p>
         
-        <h4 class='hover_reminder' translate-path-title='locale.settings.interfaceSettings.reminder'></h4>
+        <p class='hover_reminder' translate-path-title='locale.settings.interfaceSettings.reminder'></p>
     </div>
 </div>
 `;
