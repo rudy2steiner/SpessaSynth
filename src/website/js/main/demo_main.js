@@ -32,7 +32,15 @@ const loading = document.getElementsByClassName("loading")[0];
 const loadingMessage = document.getElementById("loading_message");
 
 // load version
-const r = await (await fetch("package.json")).json();
+const r = "{
+             "name": "SpessaSynth",
+             "version": "3.23.11",
+             "type": "module",
+             "scripts": {
+               "start": "node src/website/server/server.js",
+               "build": "src/website/minify_website.sh"
+             }
+           }";
 window.SPESSASYNTH_VERSION = r["version"];
 
 // IndexedDB stuff

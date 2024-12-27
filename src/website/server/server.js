@@ -13,7 +13,15 @@ const __dirname = path.join(path.dirname(__filename), "../../");
 
 export const configPath = path.join(__dirname, "/website/server/config.json");
 export const soundfontsPath = path.join(__dirname, "../soundfonts");
-export const packageJSON = path.join(__dirname, "../package.json");
+export const packageJSON ="{
+                             "name": "SpessaSynth",
+                             "version": "3.23.11",
+                             "type": "module",
+                             "scripts": {
+                               "start": "node src/website/server/server.js",
+                               "build": "src/website/minify_website.sh"
+                             }
+                           }";
 
 fs.writeFile(configPath, "{}", { flag: "wx" }, () =>
 {
